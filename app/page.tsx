@@ -2,102 +2,98 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+    <div className="flex flex-col bg-[#fff]">
+      <HomePage />
+      <AboutPage />
+      </div>
   );
+}
+function HomePage(){
+  return(
+    <div className="flex h-screen px-[80px] flex-col justify-center items-center gap-2 bg-[#001487]" >
+      <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1440 798" preserveAspectRatio="xMidYMid slice" fill="none" className="absolute inset-0 w-full h-full">
+<g filter="url(#filter0_n_400_2151)">
+<rect width="100%" height="100%" fill="white" fillOpacity="0.04"/>
+</g>
+<defs>
+<filter id="filter0_n_400_2151" x="0" y="0" width="1440" height="798" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feTurbulence type="fractalNoise" baseFrequency="0.40000000596046448 0.40000000596046448" stitchTiles="stitch" numOctaves="3" result="noise" seed="9340"/>
+<feColorMatrix in="noise" type="luminanceToAlpha" result="alphaNoise"/>
+<feComponentTransfer in="alphaNoise" result="coloredNoise1">
+<feFuncA type="discrete" tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "/>
+</feComponentTransfer>
+<feComposite operator="in" in2="shape" in="coloredNoise1" result="noise1Clipped"/>
+<feFlood floodColor="#FFFFFF" result="color1Flood"/>
+<feComposite operator="in" in2="noise1Clipped" in="color1Flood" result="color1"/>
+<feMerge result="effect1_noise_400_2151">
+<feMergeNode in="shape"/>
+<feMergeNode in="color1"/>
+</feMerge>
+</filter>
+</defs>
+</svg>
+<div className="flex w-[1239px] h-[497px] flex-col justify-center items-center gap-12 shrink-0" >
+<div className="flex w-[1079px] flex-col items-center gap-6" >
+<div className="relative flex flex-col justify-center items-center [-moz-column-gap:-32px] self-stretch" >
+<p className="absolute left-[15px] top-[-63px] rotate-[-30deg] text-[#C0FF1D] text-right font-[LaureenproW05-Bold] text-[48px] font-bold leading-[90%]">
+(ابداع
+  بصري)
+</p>
+<p className="text-[#A6ADD5] text-center text-[100px] font-semibold leading-[110%]">
+We Create Brands That Stand Out
+</p>
+<p className="w-[1079px] h-[110px] text-white/65 text-center  text-[100px] font-semibold leading-[110%]">
+That 
+  <span className="text-white px-4 font-[Myanmar_MN] text-[100px] font-normal leading-[110%]">
+  leave
+</span>
+a Mark.
+</p>
+</div>
+<p className="w-[546px] text-white text-center  text-[18px] font-normal leading-[130%]">
+A creative agency specializing in marketing and brand design. We help you stand out, grow, and excel.
+</p>
+
+</div>
+<div className="flex items-start gap-6">
+<div className="flex justify-center items-center px-12 py-4 gap-[25px] rounded-[30.46px] bg-gradient-to-b from-[#75CDFF] to-[#24B0FF] shadow-[inset_0_4px_9.519px_rgba(255,251,211,0.5),0_2px_5.711px_#1A1954]">
+Watch our creativity
+</div>
+<div className="flex items-center px-12 py-4 gap-[25px] rounded-[30.46px] border border-white/14 bg-[#2A3A9A] shadow-[inset_0_1px_12px_rgba(255,255,255,0.08)]">
+Contact us
+</div>
+</div>
+
+</div>
+    </div>  
+  )
+}
+
+
+function AboutPage(){
+  return(
+    <div className="flex flex-col items-start w-[var(--widht,1440px)] px-[var(--margin,80px)] py-[104px] gap-14 bg-white">
+  <div className="flex flex-col items-start gap-6">
+  <p className="text-[var(--Content-Primary,#0F218D)]  text-[18px] font-medium leading-[140%] capitalize">
+  Your text here
+</p>
+<p className="text-[var(--Content-Natural-Primary,#13131D)]  text-[48px] font-medium leading-[120%]">
+55 Agency is a creative team specializing
+<span className="text-[var(--Content-Natural-Tertiary,#8084AA)]  text-[48px] font-medium leading-[120%]">
+in marketing, design, and brand building. We help businesses craft strong identities, create engaging designs, and launch effective marketing campaigns that drive real results.
+</span>
+</p>
+</div>
+<div className="flex items-start gap-2">
+<div className="flex justify-center items-center px-12 py-4 gap-[25px] rounded-[30.46px] bg-gradient-to-b from-[#75CDFF] to-[#24B0FF] shadow-[inset_0_4px_9.519px_rgba(255,251,211,0.5),0_2px_5.711px_#1A1954]">
+Watch our creativity
+</div>
+<div className="flex items-center px-12 py-4 gap-[25px] rounded-[30.46px] border border-white/14 bg-[#2A3A9A] shadow-[inset_0_1px_12px_rgba(255,255,255,0.08)]">
+Contact us
+</div>
+</div>
+</div>
+  )
 }
